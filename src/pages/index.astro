@@ -1,0 +1,247 @@
+---
+// Component Imports
+// import Tour from '../components/Tour.astro';
+import Header from '../components/Header.astro';
+// You can import components from any supported Framework here!
+
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'Gallery';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<!-- <style global>
+		@import "../styles/global.css";
+	</style> -->
+
+	<style>
+		body {
+			background-color: black;
+		}
+
+		.grid-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img {
+			padding:5px;
+			border-radius: 12px;
+		}
+
+		.grid-item2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.grid-container2 {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.grid-container3 {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<Header />
+		<div class="grid-container3">
+			<div class='grid-container2'>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_1'><img style="width:258px;" src="/assets/landscape/20201112_105838_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_2'><img style="width:258px;" src="/assets/landscape/20211022_083103_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+				<div class='grid-item3'><a href='/p1/zoompic_1'><img src="/assets/portrait/20210901_110340_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			</div>
+
+			<div class='grid-container2'>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_3'><img style="width:258px;" src="/assets/landscape/20201121_141845_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_4'><img style="width:258px;" src="/assets/landscape/20201112_105832_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+				<div class='grid-item3'><a href='/p1/zoompic_2'><img src="/assets/portrait/20210907_161104_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			</div>
+
+			<div class='grid-container2'>
+				<div class='grid-item3'><a href='/p1/zoompic_3'><img src="/assets/portrait/20200703_122220_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_5'><img style="width:258px;" src="/assets/landscape/20211023_111619_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_6'><img style="width:258px;" src="/assets/landscape/20201121_141838_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+			</div>
+
+			<div class='grid-container2'>
+				<div class='grid-item3'><a href='/p1/zoompic_4'><img src="/assets/portrait/20210918_105122_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_7'><img style="width:258px;" src="/assets/landscape/20211023_111607_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_8'><img style="width:258px;" src="/assets/landscape/20210114_141712_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+			</div>
+
+			<div class='grid-container2'>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_9'><img style="width:258px;" src="/assets/landscape/20201112_104620_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_10'><img style="width:258px;" src="/assets/landscape/20210114_140555_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+				<div class='grid-item3'><a href='/p1/zoompic_5'><img src="/assets/portrait/20210114_140603_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			</div>
+
+			<div class='grid-container2'>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_11'><img style="width:258px;" src="/assets/landscape/20201121_141544_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_12'><img style="width:258px;" src="/assets/landscape/20210907_174135_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+				<div class='grid-item3'><a href='/p1/zoompic_6'><img src="/assets/portrait/20200703_122229_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			</div>
+
+			<div class='grid-container2'>
+				<div class='grid-item3'><a href='/p1/zoompic_7'><img src="/assets/portrait/20210907_161055_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_13'><img style="width:258px;" src="/assets/landscape/20201121_154954_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_14'><img style="width:258px;" src="/assets/landscape/20201121_141826_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+			</div>
+
+			<div class='grid-container2'>
+				<div class='grid-item3'><a href='/p1/zoompic_8'><img src="/assets/portrait/20210114_113707_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_15'><img style="width:258px;" src="/assets/landscape/20201121_141549_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_16'><img style="width:258px;" src="/assets/landscape/20200520_143645_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+			</div>
+
+			<div class='grid-container2'>
+				<div class='grid-item2'>
+					<a href='/l1/zoompic_17'><img style="width:258px;" src="/assets/landscape/20201121_154747_thumb.webp" loading="lazy" alt='fuckit' /></a>
+					<a href='/l1/zoompic_18'><img style="width:258px;" src="/assets/landscape/20201121_141608_thumb.webp" loading="lazy" alt='fuckit' /></a>
+				</div>
+				<div class='grid-item3'><a href='/p1/zoompic_9'><img src="/assets/portrait/20210114_113656_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			</div>
+		</div>
+		<!-- <div class='grid-container'>
+			<div class='grid-item'><a href='/l1/zoompic_1'><img src="/assets/landscape/20201112_105838_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_2'><img src="/assets/landscape/20211022_083103_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_3'><img src="/assets/landscape/20201121_141845_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_4'><img src="/assets/landscape/20201112_105832_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_5'><img src="/assets/landscape/20211023_111619_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_6'><img src="/assets/landscape/20201121_141838_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_7'><img src="/assets/landscape/20211023_111607_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_8'><img src="/assets/landscape/20210114_141712_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_9'><img src="/assets/landscape/20201112_104620_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_10'><img src="/assets/landscape/20210114_140555_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_11'><img src="/assets/landscape/20201121_141544_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_12'><img src="/assets/landscape/20210907_174135_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_13'><img src="/assets/landscape/20201121_154954_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_14'><img src="/assets/landscape/20201121_141826_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_15'><img src="/assets/landscape/20201121_141549_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_16'><img src="/assets/landscape/20200520_143645_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_17'><img src="/assets/landscape/20201121_154747_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/l1/zoompic_18'><img src="/assets/landscape/20201121_141608_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+		</div>	 -->
+			
+			
+		<!-- <div class='grid-container'>
+			<div class='grid-item'><a href='/p1/zoompic_1'><img src="/assets/portrait/20210901_110340_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p1/zoompic_2'><img src="/assets/portrait/20210907_161104_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p1/zoompic_3'><img src="/assets/portrait/20200703_122220_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p1/zoompic_4'><img src="/assets/portrait/20210918_105122_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p1/zoompic_5'><img src="/assets/portrait/20210114_140603_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p1/zoompic_6'><img src="/assets/portrait/20200703_122229_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p1/zoompic_7'><img src="/assets/portrait/20210907_161055_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p1/zoompic_8'><img src="/assets/portrait/20210114_113707_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p1/zoompic_9'><img src="/assets/portrait/20210114_113656_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+		</div> -->
+
+		<div class='grid-container'>
+			<div class='grid-item'><a href='/p2/zoompic_10'><img src="/assets/portrait/20200703_122219_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_11'><img src="/assets/portrait/20210114_131809_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_12'><img src="/assets/portrait/20210114_111858_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_13'><img src="/assets/portrait/20210728_110226_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_14'><img src="/assets/portrait/20210114_111902_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_15'><img src="/assets/portrait/20200703_122216_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_16'><img src="/assets/portrait/20210709_084059_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_17'><img src="/assets/portrait/20210114_130013_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_18'><img src="/assets/portrait/20210728_110233_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_19'><img src="/assets/portrait/20210709_093733_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_20'><img src="/assets/portrait/20200703_122218_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_21'><img src="/assets/portrait/20211023_111603_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_22'><img src="/assets/portrait/20210709_093705_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_23'><img src="/assets/portrait/20211022_082327_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/p2/zoompic_24'><img src="/assets/portrait/20210907_161102_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210709_093724'><img src="/assets/portrait/20210709_093724_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210907_161051'><img src="/assets/portrait/20210907_161051_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210901_110605'><img src="/assets/portrait/20210901_110605_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210703_114202'><img src="/assets/portrait/20210703_114202_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20201112_104612'><img src="/assets/portrait/20201112_104612_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210114_141802'><img src="/assets/portrait/20210114_141802_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20211022_081949'><img src="/assets/portrait/20211022_081949_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210901_110253'><img src="/assets/portrait/20210901_110253_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20200703_122208'><img src="/assets/portrait/20200703_122208_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210901_110237'><img src="/assets/portrait/20210901_110237_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20201119_100147'><img src="/assets/portrait/20201119_100147_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210918_105132'><img src="/assets/portrait/20210918_105132_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210703_114203'><img src="/assets/portrait/20210703_114203_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20201112_103812'><img src="/assets/portrait/20201112_103812_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210709_093636'><img src="/assets/portrait/20210709_093636_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210703_114205'><img src="/assets/portrait/20210703_114205_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210901_110336'><img src="/assets/portrait/20210901_110336_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			
+			
+			<div class='grid-item'><a href='/gallery/page2zoom/20201112_112326'><img src="/assets/portrait/20201112_112326_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210907_161053'><img src="/assets/portrait/20210907_161053_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210901_110234'><img src="/assets/portrait/20210901_110234_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210918_112452'><img src="/assets/portrait/20210918_112452_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210114_144538'><img src="/assets/portrait/20210114_144538_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210901_110619'><img src="/assets/portrait/20210901_110619_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20211021_145212'><img src="/assets/portrait/20211021_145212_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210901_110316'><img src="/assets/portrait/20210901_110316_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210901_110629'><img src="/assets/portrait/20210901_110629_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210918_105104'><img src="/assets/portrait/20210918_105104_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20201112_101000'><img src="/assets/portrait/20201112_101000_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20201112_112404'><img src="/assets/portrait/20201112_112404_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20201121_142519'><img src="/assets/portrait/20201121_142519_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20201112_120634'><img src="/assets/portrait/20201112_120634_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210114_131757'><img src="/assets/portrait/20210114_131757_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210728_110344'><img src="/assets/portrait/20210728_110344_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+			<div class='grid-item'><a href='/gallery/page2zoom/20210114_131804'><img src="/assets/portrait/20210114_131804_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+		</div>
+		<h1>360 516 8933</h1>
+
+		<!--
+
+		You can also use imported framework components directly in your markup!
+		
+		Note: by default, these components are NOT interactive on the client.
+		The `:visible` directive tells Astro to make it interactive.
+		
+		See https://docs.astro.build/core-concepts/component-hydration/ 
+
+		-->
+
+	</main>
+</body>
+</html>
