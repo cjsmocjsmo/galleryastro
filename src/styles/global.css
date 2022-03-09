@@ -1,5 +1,3 @@
-
-
 body {
 	background-color: black;
 }
@@ -13,4 +11,39 @@ body {
 
 .zoom-pic {
 	max-width: 800px;
+}
+
+img {
+	padding:5px;
+	border-radius: 12px;
+}
+
+.grid-item2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-container2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-container3 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
