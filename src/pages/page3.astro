@@ -1,66 +1,52 @@
 ---
-// Component Imports
-// import Tour from '../components/Tour.astro';
-import Header from '../components/Header.astro';
-import ButtonGroup from '../components/ButtonGroup.astro';
-// You can import components from any supported Framework here!
-
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = 'Gallery';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+	import Head from '../components/Head.astro';
+	import Header from '../components/Header.astro';
+	import BackArrow from '../components/BackArrow.astro';
+	import ForwardArrow from '../components/ForwardArrow.astro';
+	import Thumbpic from '../components/Thumbpic.astro';
 ---
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
-
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-	</style>
-</head>
-<body>
-	<main>
-		<Header />
-
-		<ButtonGroup />
-
-		<div class='grid-container'>
-			<div class='grid-item'><a href='/p3/zoompic_35'><img src="/assets/portrait/20201119_100147_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_36'><img src="/assets/portrait/20210918_105132_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_37'><img src="/assets/portrait/20210703_114203_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_38'><img src="/assets/portrait/20201112_103812_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_39'><img src="/assets/portrait/20210709_093636_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_40'><img src="/assets/portrait/20210703_114205_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_41'><img src="/assets/portrait/20210901_110336_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_42'><img src="/assets/portrait/20201112_112326_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_43'><img src="/assets/portrait/20210907_161053_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_44'><img src="/assets/portrait/20210901_110234_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_45'><img src="/assets/portrait/20210918_112452_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_46'><img src="/assets/portrait/20210114_144538_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_47'><img src="/assets/portrait/20210901_110619_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_48'><img src="/assets/portrait/20211021_145212_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_49'><img src="/assets/portrait/20210901_110316_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_50'><img src="/assets/portrait/20210901_110629_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_51'><img src="/assets/portrait/20210918_105104_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_52'><img src="/assets/portrait/20201112_101000_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_53'><img src="/assets/portrait/20201112_112404_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_54'><img src="/assets/portrait/20201121_142519_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_55'><img src="/assets/portrait/20201112_120634_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_56'><img src="/assets/portrait/20210114_131757_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_57'><img src="/assets/portrait/20210728_110344_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
-			<div class='grid-item'><a href='/p3/zoompic_58'><img src="/assets/portrait/20210114_131804_thumb.webp" loading="lazy" alt='fuckit' /></a></div>
+	<head>
+		<Head />
+	</head>
+	<body>
+		<main>
+			<Header />
+			<div class="arrows">
+				<BackArrow href="/page2" />
+				<ForwardArrow href="/" />
+			</div>
+			<div class='grid-container'>
+				<Thumbpic href='/p3/zoompic_35' src="/assets/portrait/20201119_100147_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_36' src="/assets/portrait/20210918_105132_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_37' src="/assets/portrait/20210703_114203_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_38' src="/assets/portrait/20201112_103812_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_39' src="/assets/portrait/20210709_093636_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_40' src="/assets/portrait/20210703_114205_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_41' src="/assets/portrait/20210901_110336_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_42' src="/assets/portrait/20201112_112326_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_43' src="/assets/portrait/20210907_161053_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_44' src="/assets/portrait/20210901_110234_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_45' src="/assets/portrait/20210918_112452_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_46' src="/assets/portrait/20210114_144538_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_47' src="/assets/portrait/20210901_110619_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_48' src="/assets/portrait/20211021_145212_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_49' src="/assets/portrait/20210901_110316_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_50' src="/assets/portrait/20210901_110629_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_51' src="/assets/portrait/20210918_105104_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_52' src="/assets/portrait/20201112_101000_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_53' src="/assets/portrait/20201112_112404_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_54' src="/assets/portrait/20201121_142519_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_55' src="/assets/portrait/20201112_120634_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_56' src="/assets/portrait/20210114_131757_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_57' src="/assets/portrait/20210728_110344_thumb.webp" />
+				<Thumbpic href='/p3/zoompic_58' src="/assets/portrait/20210114_131804_thumb.webp" />
+				<Thumbpic href='/p1/zoompic_5' src="/assets/portrait/20210114_140603_thumb.webp" />
+				<Thumbpic href='/p1/zoompic_6' src="/assets/portrait/20200703_122229_thumb.webp" />
+				<Thumbpic href='/p1/zoompic_7' src="/assets/portrait/20210907_161055_thumb.webp" />
+				<Thumbpic href='/p1/zoompic_8' src="/assets/portrait/20210114_113707_thumb.webp" />
+				<Thumbpic href='/p1/zoompic_9' src="/assets/portrait/20210114_113656_thumb.webp" />
 		</div>
-
-		<ButtonGroup />
-
 		<h1>360 516 8933</h1>
 	</main>
 </body>
